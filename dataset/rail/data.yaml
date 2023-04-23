@@ -1,0 +1,5 @@
+names:
+- l
+nc: 1
+train: dataset/rail/train/images
+val: dataset/rail/valid/images
