@@ -2,9 +2,9 @@ import os
 import glob
 import xml.etree.ElementTree as ET
 
-xml_file=r'D:\code\datas\data_set01\Annotations'
+xml_file=r'D:\code\datas\data_class\K6\XML'
 
-l=['L']
+l=['l']
 
 def convert(box,dw,dh):
     x=(box[0]+box[2])/2.0
@@ -21,8 +21,8 @@ def convert(box,dw,dh):
 
 def f(name_id):
 
-    xml_o=open(r'D:\code\datas\data_set01\Annotations\%s.xml'%name_id)
-    txt_o=open(r'D:\code\datas\data_set01\AnnotationsText\%s.txt'%name_id,'w')
+    xml_o=open(r'D:\code\datas\data_class\K6\XML\%s.xml'%name_id,encoding='utf-8')
+    txt_o=open(r'D:\code\datas\data_class\K6\TXT\%s.txt'%name_id,'w',encoding='utf-8')
 
     pares=ET.parse(xml_o)
     root=pares.getroot()
